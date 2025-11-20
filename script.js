@@ -3,7 +3,6 @@ const searchBar = document.getElementById("searchBar");
 const widget = document.querySelector(".widget");
 const container = document.querySelector("#container");
 
-
 //fetches from API
 async function getWeather(city) {
     const APIKey = "eae3caacd0bdb2a0f16887bafc30d609";
@@ -71,6 +70,10 @@ function updateUI(data) {
 // listens for enter input
 searchBar.addEventListener("keyup", function(e) {
     if (e.key === "Enter"){
+        if (searchBar.value === ""){
+            alert("Insert a city");
+            return;
+        }
         getWeather(searchBar.value);
     }
 });
