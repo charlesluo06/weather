@@ -118,16 +118,17 @@ body {
 
 @media (max-width: 600px) {
     .widget {
-        width: 90%;       /* fill most of the phone */
-        min-width: 0;     /* remove weird forced sizing */
-        max-width: none;  
-        height: auto;     /* let it grow naturally */
-        padding: 20px;
+        width: 90%;
+        height: 70%;        /* solid size, not too tall or short */
+        min-width: 0;       /* fixes weird squeezing */
+        max-width: none;
         border-radius: 30px;
+        padding-top: 35px;
+        padding-bottom: 50px;
     }
 
     #emoji {
-        width: 60%;       /* make the icon larger */
+        width: 50%;
     }
 
     .city {
@@ -137,5 +138,11 @@ body {
     .temp {
         font-size: 220%;
     }
+
+    .bottom {
+        bottom: 20px;
+        font-size: 110%;
+    }
 }
+
 
