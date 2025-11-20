@@ -116,29 +116,3 @@ body {
     font-size: 120%;
 }
 
-@media (max-width: 900px) {
-    .widget {
-        height: 70% !important;
-        min-width: 0;
-        max-width: none;
-        width: 90%;
-        padding-top: 40px;
-        padding-bottom: 60px;
-        border-radius: 30px;
-    }
-
-    #emoji {
-        width: 50%;
-    }
-
-    .city {
-        font-size: 150%;
-    }
-
-    .temp {
-        font-size: 220%;
-    }
-}
-
-
-
