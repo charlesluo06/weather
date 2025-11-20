@@ -21,6 +21,8 @@ function updateUI(data) {
     let type = document.querySelector("#type");
     let emoji = document.querySelector("#emoji")
 
+
+    // error screen
     if (data.message === "city not found"){
         type.textContent = "City Not Found."
         emoji.src = "";
@@ -39,6 +41,8 @@ function updateUI(data) {
     document.querySelector("#low").textContent = "Low: " + Math.round(data.main.temp_min) + "°";
     document.querySelector("#high").textContent = "High: " + Math.round(data.main.temp_max) + "°";
 
+
+    // diff screens for varying weathers
     if (data.weather[0].main === "Clouds") {
         emoji.src = "cloudy.png";
         type.textContent = "Cloudy";
