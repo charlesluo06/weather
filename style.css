@@ -116,15 +116,15 @@ body {
     font-size: 120%;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 900px) {
     .widget {
-        width: 90%;
-        height: 70%;        /* solid size, not too tall or short */
-        min-width: 0;       /* fixes weird squeezing */
+        height: 70% !important;
+        min-width: 0;
         max-width: none;
+        width: 90%;
+        padding-top: 40px;
+        padding-bottom: 60px;
         border-radius: 30px;
-        padding-top: 35px;
-        padding-bottom: 50px;
     }
 
     #emoji {
@@ -138,11 +138,7 @@ body {
     .temp {
         font-size: 220%;
     }
-
-    .bottom {
-        bottom: 20px;
-        font-size: 110%;
-    }
 }
+
 
 
