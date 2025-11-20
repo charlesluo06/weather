@@ -1,0 +1,119 @@
+@font-face {
+    font-family: 'Montserrat';
+    src: url(Montserrat-Regular.ttf);
+}
+
+* {
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    background: linear-gradient(180deg, #a383fc, #463d65);
+    margin: 0;
+    padding: 0;
+}
+
+.search{
+    padding-bottom: 40px;
+    width: 50%;
+    max-width: 300px;
+    padding-right: 10px;
+}
+
+#searchBar {
+    position: static;
+    padding-left: 10px;
+    width: 100%;
+    height: 180%;
+    border-radius: 25px;
+    border: 2px;
+    font-weight: bold;
+    color: black;
+    background-color: white;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+#searchBar::placeholder {
+    color: black;
+    font-weight:normal;
+    opacity: .5;
+}
+
+#searchBar:focus {
+    outline: white;
+    border: 2px solid white;
+    border-radius: 20px;
+}
+
+#container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: white;
+}
+
+.widget {
+    position: relative;
+    width: 50%;
+    max-width: 60vh;
+    height: 45%;
+    background: linear-gradient(135deg, #5ee9fb, #3b6efb);
+    display: flex;
+    flex-direction: column;  /* stack things: row on top, sun under */
+    align-items: center;
+    border-radius: 40px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+    padding-top: 25px; /* space from top */
+}
+
+.top {
+    width: 80%;               /* gives the row space to work */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;       /* space between row & sun */
+}
+
+.city {
+    font-size: 175%;
+    font-weight: bold;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 20px;
+    padding: 7px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.temp {
+    font-size: 250%;
+    font-weight: bold;
+}
+
+#emoji {
+    position: absolute;
+    top: 50%;    /* center vertically */
+    left: 50%;   /* center horizontally */
+    transform: translate(-50%, -50%); /* perfect centering */
+    width: 50%;
+}
+
+#type {
+    border-radius: 20px;
+    font-weight: 600;
+}
+
+.bottom {
+    position: absolute;       /* puts it at the bottom of the widget */
+    bottom: 30px;             /* adjust spacing from bottom */
+    width: 80%;         
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; /* spreads them evenly */
+    align-items: center;
+    gap: 20px;
+    font-size: 120%;
+}
+
+
+
