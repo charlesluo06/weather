@@ -118,22 +118,24 @@ body {
 
 @media (max-width: 600px) {
     .widget {
-        width: 90%;
-        height: auto;   /* lets it expand naturally */
-        padding: 30px;  /* extra spaced look on mobile */
-        max-width: none; 
+        width: 90%;       /* fill most of the phone */
+        min-width: 0;     /* remove weird forced sizing */
+        max-width: none;  
+        height: auto;     /* let it grow naturally */
+        padding: 20px;
         border-radius: 30px;
     }
 
+    #emoji {
+        width: 60%;       /* make the icon larger */
+    }
+
     .city {
-        font-size: 180%;
+        font-size: 150%;
     }
 
     .temp {
-        font-size: 250%;
-    }
-
-    #emoji {
-        width: 55%;   /* make the icon bigger for mobile */
+        font-size: 220%;
     }
 }
+
