@@ -57,6 +57,7 @@ body {
 .widget {
     position: relative;
     width: 50%;
+    min-width: 50vh;
     max-width: 60vh;
     height: 45%;
     background: linear-gradient(135deg, #5ee9fb, #3b6efb);
