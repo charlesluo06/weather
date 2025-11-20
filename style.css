@@ -116,5 +116,24 @@ body {
     font-size: 120%;
 }
 
+@media (max-width: 600px) {
+    .widget {
+        width: 90%;
+        height: auto;   /* lets it expand naturally */
+        padding: 30px;  /* extra spaced look on mobile */
+        max-width: none; 
+        border-radius: 30px;
+    }
 
+    .city {
+        font-size: 180%;
+    }
 
+    .temp {
+        font-size: 250%;
+    }
+
+    #emoji {
+        width: 55%;   /* make the icon bigger for mobile */
+    }
+}
